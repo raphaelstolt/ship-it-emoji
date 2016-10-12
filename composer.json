@@ -1,0 +1,40 @@
+{
+    "name": "stolt/ship-it-emoji",
+    "description": "An emoji subset for ship-it.",
+    "keywords": ["emoji", "console", "constants"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raphael Stolt",
+            "email": "raphael.stolt@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Stolt\\ShipIt\\Emoji\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Stolt\\ShipIt\\Emoji\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "type": "library",
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "ship-it-emoji:test": "phpunit",
+        "ship-it-emoji:cs-fix": "php-cs-fixer fix . -vv || true",
+        "ship-it-emoji:cs-lint": "php-cs-fixer fix --diff --verbose --dry-run",
+        "ship-it-emoji:configure-commit-template": "git config --add commit.template .gitmessage"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "2.0.0-alpha",
+        "phpunit/phpunit": "^5.6"
+    }
+}

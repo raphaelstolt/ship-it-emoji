@@ -2,10 +2,10 @@
 
 namespace Stolt\ShipIt\Emoji\Tests;
 
-use PHPUnit_Framework_TestCase as PHPUnit;
+use PHPUnit\Framework\TestCase;
 use Stolt\ShipIt\Emoji\Emoji;
 
-class EmojiTest extends PHPUnit
+class EmojiTest extends TestCase
 {
     public function testEmojiSubset()
     {
